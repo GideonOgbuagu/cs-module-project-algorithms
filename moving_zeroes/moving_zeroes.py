@@ -4,8 +4,21 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
-
     pass
+    altered = []
+    i = 0
+    j = 0
+    while i < len(arr):
+        if arr[i] != 0:
+            altered.append(arr[i])
+        i += 1
+    while j < len(arr):
+        if arr[j] == 0:
+            altered.append(arr[j])
+        j += 1
+    
+    return altered
+
 
 
 if __name__ == '__main__':
