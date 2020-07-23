@@ -6,6 +6,20 @@ def product_of_all_other_numbers(arr):
     # Your code here
 
     pass
+    new_arr = []
+    i = 0
+    j = 0
+    product = 1
+    while i < len(arr):
+        while j < len(arr):
+            product = product * arr[j] 
+            j += 1
+
+        new_arr.append(product//arr[i])
+        i += 1
+
+    return new_arr
+
 
 
 if __name__ == '__main__':
